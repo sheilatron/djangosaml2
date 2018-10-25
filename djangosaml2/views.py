@@ -265,7 +265,6 @@ class AssertionConsumerServiceView(View):
         """
         SAML Authorization Response endpoint
         """
-        import epdb; epdb.set_trace()
         attribute_mapping = attribute_mapping or get_custom_setting('SAML_ATTRIBUTE_MAPPING', {'uid': ('username', )})
         create_unknown_user = create_unknown_user if create_unknown_user is not None else \
             get_custom_setting('SAML_CREATE_UNKNOWN_USER', True)
