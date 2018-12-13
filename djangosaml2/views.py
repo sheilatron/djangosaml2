@@ -371,7 +371,7 @@ class AssertionConsumerServiceView(View):
         """
         return relay_state
 
-    def custom_redirect(self, user, relay_state):
+    def custom_redirect(self, user, relay_state, session_info):
         """
         Subclasses may override this method to implement custom logic for redirect.
 
