@@ -339,7 +339,7 @@ class AssertionConsumerServiceView(View):
         self.customize_session(user, session_info)
 
         relay_state = self.build_relay_state()
-        custom_redirect_url = self.custom_redirect(user, relay_state)
+        custom_redirect_url = self.custom_redirect(user, relay_state, session_info)
         if custom_redirect_url:
             return HttpResponseRedirect(custom_redirect_url)
         if not is_safe_url_compat(url=relay_state, allowed_hosts={self.request.get_host()}):
