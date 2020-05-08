@@ -28,6 +28,11 @@ Changes
 
 Thanks to plumdog
 
+TBD
+----------
+- Assertion consumer service now more extensible as a class-based view
+  with hooks that can be overridden by subclass implementations.
+
 0.17.2 (2018-08-29)
 ----------
 - Upgraded pysaml2 dependency to version 4.6.0 which fixes security issue.
